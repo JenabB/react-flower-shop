@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Register from "./Register";
 import Login from "./Login";
 const Profile = () => {
-  const [isRegister, setIsRegister] = useState(false);
   return (
     <div>
       <h1>Don't have an account ?</h1>

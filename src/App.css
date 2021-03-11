@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Rosario&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
+  width: 30%;
+  margin: 10px auto;
+  background-color: white;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .app-container {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .header-container {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app-container {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
+
+.header-container {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./assets/images/header.png");
+}
+
+.search-container {
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.carousel-container {
+  margin-top: 20px;
+}
+
+.carousel-item img {
+  width: 90%;
+  height: 150px;
+  border-radius: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card img {
+  border-radius: 20px;
+}
+
+.home-carousel {
+  padding-left: 20px;
+}
+
+.featured-name {
   color: white;
+  font-size: 12pt;
+  position: absolute;
+  bottom: 18px;
+  left: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.featured-count {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bottom-navigation {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+  padding: 10px;
+  background-color: #ffffff;
+  background-size: cover;
+}
+.left-nav {
+  display: flex;
+}
+.right-nav {
+  display: flex;
+}
+.bottom-navigation div {
+  margin-right: 20px;
+}
+
+.product-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.scan-icon {
+  background-image: url("../src/assets//images/bg-btn-scan.png");
+  background-size: cover;
+  z-index: 999;
+}
+
+.product-navigation h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .product-navigation h1 {
+    font-size: 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.product-navigation div {
+  margin-right: 20px;
+}
+
+.product-navigation {
+  color: #ffffff;
+  text-decoration: none;
 }

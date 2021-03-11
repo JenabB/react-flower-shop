@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import searchicon from "../../assets/icons/search.svg";
+import React from "react";
 import microphone from "../../assets/icons/microphone.svg";
 import hamburger from "../../assets/icons/hamburger.svg";
 import notif from "../../assets/icons/notif.svg";
 
 const Header = () => {
-  const [search, setSearch] = useState("");
-  const handleSearch = () => {};
   return (
     <div className="header-container">
       <div className="header-top-container">

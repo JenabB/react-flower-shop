@@ -52,7 +52,7 @@ const Popular = () => {
     {
       id: 4,
       image:
-        "https://cdns.klimg.com/merdeka.com/i/w/news/2020/05/16/1177806/540x270/10-macam-anggrek-tercantik-di-dunia-cocok-untuk-hiasi-taman-anda.jpg",
+        "http://1.bp.blogspot.com/-S6WBAWL3HsE/VFJbZaBjrpI/AAAAAAAAGwE/tOerk2zrtSs/s1600/manfaat%2Bdan%2Bkhsasiat%2BBunga%2Banggrek.jpg",
       name: "Anggrek",
       source: "Nelakurinji, India",
       price: 14.0,

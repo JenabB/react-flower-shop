@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-
-const Cart = () => {
+import { Link } from "react-router-dom";
+const CartItem = () => {
   const [isEmpty] = useState(true);
 
   return (
     <div>
       {isEmpty ? (
         <div>
-          <h1>No</h1>
+          <h1>Don't have item yet</h1>
+          <Link to="/">Buy</Link>
         </div>
       ) : (
         <div>
@@ -18,4 +19,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartItem;

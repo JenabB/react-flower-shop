@@ -90,14 +90,16 @@
   bottom: 0px;
   padding: 10px;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-size: cover;
+  box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.9);
 }
+
 .left-nav {
   display: flex;
+  align-items: center;
 }
 .right-nav {
   display: flex;
+  align-items: center;
 }
 .bottom-navigation div {
   margin-right: 20px;

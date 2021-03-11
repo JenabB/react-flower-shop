@@ -1,9 +1,5 @@
 import React from "react";
-import arrow from "../../../assets/icons/arrow-right.svg";
-import location from "../../../assets/icons/location.svg";
-import star from "../../../assets/icons/star.svg";
 import ReactStars from "react-rating-stars-component";
-
 const Popular = () => {
   const popular = [
     {

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .app-container {
-  width: 30%;
+  width: 400px;
   margin: 10px auto;
   background-color: white;
   min-height: 100vh;
@@ -83,14 +83,20 @@
 }
 
 .bottom-navigation {
-  width: 100%;
+  width: 375px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   bottom: 0px;
   padding: 10px;
   background-color: #ffffff;
-  box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 768px) {
+  .bottom-navigation {
+    width: 100%;
+  }
 }
 
 .left-nav {

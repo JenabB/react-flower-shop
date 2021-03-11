@@ -1,9 +1,10 @@
 import React from "react";
+import Profile from "../components/account/Profile";
 
 const Account = () => {
   return (
     <div>
-      <h1>Account</h1>
+      <Profile />
     </div>
   );
 };

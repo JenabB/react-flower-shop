@@ -1,14 +1,6 @@
 import React from "react";
-import Slider from "infinite-react-carousel";
 
 const Carousel = () => {
-  const settings = {
-    arrows: false,
-    arrowsBlock: false,
-    autoplay: true,
-    slidesToShow: 2,
-  };
-
   const feature = [
     {
       id: 1,
@@ -41,15 +33,13 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <Slider {...settings}>
-        {feature?.map((f) => (
-          <div key={f.id} className="carousel-item">
-            <img src={f.image} alt="carousel pict" />
-            <h1 className="featured-name">{f.name}</h1>
-            <h2 className="featured-count">{f.total} item</h2>
-          </div>
-        ))}
-      </Slider>
+      {feature?.map((f) => (
+        <div key={f.id} className="carousel-item">
+          <img src={f.image} alt="carousel pict" />
+          <h1 className="featured-name">{f.name}</h1>
+          <h2 className="featured-count">{f.total} item</h2>
+        </div>
+      ))}
     </div>
   );
 };

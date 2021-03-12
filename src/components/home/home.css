@@ -90,8 +90,3 @@ a {
   border-radius: 15px;
   background-color: rgba(255, 52, 101, 0.1);
 }
-
-.carousel-container {
-  display: flex;
-  overflow: auto;
-}

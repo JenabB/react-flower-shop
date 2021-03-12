@@ -1,6 +1,7 @@
 import React from "react";
+import Carousel from "react-elastic-carousel";
 
-const Carousel = () => {
+const CarouselItem = () => {
   const feature = [
     {
       id: 1,
@@ -32,16 +33,19 @@ const Carousel = () => {
   ];
 
   return (
-    <div className="carousel-container">
-      {feature?.map((f) => (
+    <Carousel
+      enableAutoPlay={true}
+      pagination={false}
+      itemsToShow={2}
+      showArrows={false}
+    >
+      {feature.map((f) => (
         <div key={f.id} className="carousel-item">
           <img src={f.image} alt="carousel pict" />
-          <h1 className="featured-name">{f.name}</h1>
-          <h2 className="featured-count">{f.total} item</h2>
         </div>
       ))}
-    </div>
+    </Carousel>
   );
 };
 
-export default Carousel;
+export default CarouselItem;

@@ -38,10 +38,12 @@ const CarouselItem = () => {
       pagination={false}
       itemsToShow={2}
       showArrows={false}
+      className="carousel-container"
     >
       {feature.map((f) => (
         <div key={f.id} className="carousel-item">
           <img src={f.image} alt="carousel pict" />
+          <h1>Yare</h1>
         </div>
       ))}
     </Carousel>

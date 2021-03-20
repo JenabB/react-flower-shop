@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .app-container {
-  width: 400px;
+  max-width: 400px;
   margin: 10px auto;
   background-color: white;
   min-height: 100vh;
@@ -44,19 +44,6 @@
   background-color: white;
 }
 
-.carousel-container {
-  margin-top: 20px;
-}
-
-.carousel-item {
-  margin: 20px 0;
-}
-
-.carousel-item img {
-  width: 90%;
-  height: 180px;
-  border-radius: 20px;
-}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -87,7 +74,7 @@
 }
 
 .bottom-navigation {
-  width: 378px;
+  width: 400px;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -96,7 +83,7 @@
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .bottom-navigation {
     width: 100%;
   }
